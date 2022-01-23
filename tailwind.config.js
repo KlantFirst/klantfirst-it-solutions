@@ -1,0 +1,80 @@
+module.exports = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    fontSize: {
+      xs: "0.75rem",
+      sm: "0.875rem",
+      base: "1rem",
+      lg: "1.125rem",
+      xl: "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem",
+      "6xl": "4rem",
+    },
+    extend: {
+      height: {
+        "1p": "1px",
+        "0.5v": "5vh",
+        "1v": "10vh",
+        "2v": "20vh",
+        "3v": "30vh",
+        "4v": "40vh",
+        "5v": "50vh",
+        "6v": "60vh",
+        "7v": "70vh",
+        "8v": "80vh",
+        "9v": "90vh",
+        "10v": "100vh",
+        "15v": "150vh",
+      },
+      colors: {
+        primary: {
+          500: "#faff00",
+          700: "#FFF500",
+        },
+        gray: {
+          100: "#f7fafc",
+          200: "#edf2f7",
+          300: "#e2e8f0",
+          400: "#cbd5e0",
+          500: "#a0aec0",
+          600: "#718096",
+          700: "#4a5568",
+          800: "#2d3748",
+          900: "#1a202c",
+        },
+        black: "#000",
+        white: "#FFF",
+      },
+      lineHeight: {
+        hero: "4.5rem",
+      },
+      rotate: {
+        "-4": "-4deg",
+        "-5": "-5deg",
+        "-20": "-20deg",
+        "-30": "-30deg",
+        4: "4deg",
+        5: "5deg",
+        20: "20deg",
+        30: "30deg",
+      },
+      backgroundImage: {
+        intro: 'url("/assets/images/intro.png")',
+      },
+      zIndex: {
+        "-10": "-10",
+        "-20": "-20",
+      },
+      gridTemplateRows: {
+        8: "repeat(8, minmax(0, 1fr))",
+      },
+    },
+  },
+  plugins: [],
+};
