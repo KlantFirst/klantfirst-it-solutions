@@ -1,4 +1,4 @@
-import { Contact } from "../components/Contact";
+import { ContactUs } from "../components/ContactForm";
 import { Meta } from "../components/Core/Meta";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
@@ -8,7 +8,7 @@ const ContactPage = () => (
   <div className="antialiased text-gray-600">
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Header />
-    <Contact />
+    <ContactUs />
     <Footer />
   </div>
 );
