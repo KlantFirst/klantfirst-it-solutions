@@ -8,7 +8,7 @@ export const Intro = () => {
   return (
     <div className="w-screen grid justify-items-center items-center text-black pt-10">
       <div className="grid absolute h-15v w-screen top-0 grid-rows-3">
-        <div className="2xl:w-3/5">
+        <div className="w-full">
           <svg
             viewBox="0 0 780 530"
             fill="none"
@@ -20,7 +20,7 @@ export const Intro = () => {
             />
           </svg>
         </div>
-        <div className="2xl:w-1/2">
+        <div className="w-full">
           <svg
             viewBox="0 0 380 180"
             fill="none"

@@ -2,10 +2,7 @@ import React from "react";
 
 export const OurTeam = () => {
   return (
-    <div
-      id="team"
-      className="max-w-screen-xl mb-16 p-4 mx-auto md:px-8 text-black"
-    >
+    <div id="team" className="max-w-screen-xl px-4 mx-auto md:px-8 text-black">
       <div className="mb-6 md:mb-6">
         <h1 className="text-2xl xl:text-5xl font-medium dark:text-white text-center mb-4">
           Our Team
