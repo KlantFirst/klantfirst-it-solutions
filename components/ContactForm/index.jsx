@@ -1,7 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 export const ContactUs = () => {
+  const [successNotification, setSuccessNotification] = useState(false);
+  const [failureNotification, setFailureNotification] = useState(false);
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -16,9 +19,12 @@ export const ContactUs = () => {
       )
       .then(
         (result) => {
+          setSuccessNotification(true);
+          form.current.reset();
           console.log(result.text);
         },
         (error) => {
+          setFailureNotification(true);
           console.log(error.text);
         }
       );
@@ -26,11 +32,11 @@ export const ContactUs = () => {
 
   return (
     <>
-      <div className="flex justify-center flex-col items-center h-screen mx-auto bg-gray-100">
-        <p className="text-4xl font-bold text-center text-black mt-2">
+      <div className="flex justify-center flex-col items-center h-screen mx-auto my-8 bg-gray-100">
+        <p className="text-4xl font-bold text-center text-black my-4">
           Contact us
         </p>
-        <div className="pt-4">
+        <div className="pt-2">
           <form ref={form} onSubmit={sendEmail}>
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -51,13 +57,21 @@ export const ContactUs = () => {
                 />
               </div>
             </div>
+            <div className="my-6">
+              <input
+                type="tel"
+                className="block appearance-none placeholder-gray-500 placeholder-opacity-100 border border-cyan-700 rounded-md w-full py-3 px-4 text-gray-700 leading-5 focus:outline-none focus:ring-2 focus:ring-light-blue-300"
+                id="from_contact_number"
+                name="from_contact_number"
+                placeholder="Phone number"
+              />
+            </div>
             <div className="flex flex-wrap -mx-3 mb-2">
               <div className="w-full px-3">
-                <input
-                  type="textarea"
+                <textarea
                   className="resize-none block appearance-none placeholder-gray-500 placeholder-opacity-100 border border-cyan-700 rounded-md w-full py-3 px-4 text-gray-700 leading-5 focus:outline-none focus:ring-2 focus:ring-light-blue-300 h-56"
                   id="message"
-                  placeholder="Comments.."
+                  placeholder="Type your query here.."
                   name="message"
                 />
               </div>
@@ -83,6 +97,126 @@ export const ContactUs = () => {
           </form>
         </div>
       </div>
+      {successNotification && (
+        <div class="flex fixed bottom-0 right-0 flex-col justify-center">
+          <div
+            class="bg-green-600 shadow-lg mx-auto w-96 max-w-full text-sm pointer-events-auto bg-clip-padding rounded-lg block mb-3"
+            id="static-example"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+            data-mdb-autohide="false"
+          >
+            <div class="bg-green-600 flex justify-between items-center py-2 px-3 bg-clip-padding border-b green-blue-500 rounded-t-lg">
+              <p class="font-bold text-white flex items-center">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="info-circle"
+                  class="w-4 h-4 mr-2 fill-current"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"
+                  ></path>
+                </svg>
+                Thank you!
+              </p>
+              <div class="flex items-center">
+                <button
+                  type="button"
+                  onClick={() => setSuccessNotification(false)}
+                  class="btn-close btn-close-white box-content w-4 h-4 ml-2 text-white border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-white hover:opacity-75 hover:no-underline"
+                  data-mdb-dismiss="toast"
+                  aria-label="Close"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="p-3 bg-green-600 rounded-b-lg break-words text-white">
+              Query Successfully sent.
+            </div>
+          </div>
+        </div>
+      )}
+      {failureNotification && (
+        <div class="flex fixed bottom-0 right-0 flex-col justify-center">
+          <div
+            class="bg-red-600 shadow-lg mx-auto w-96 max-w-full text-sm pointer-events-auto bg-clip-padding rounded-lg block mb-3"
+            id="static-example"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+            data-mdb-autohide="false"
+          >
+            <div class="bg-red-600 flex justify-between items-center py-2 px-3 bg-clip-padding border-b green-blue-500 rounded-t-lg">
+              <p class="font-bold text-white flex items-center">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="info-circle"
+                  class="w-4 h-4 mr-2 fill-current"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"
+                  ></path>
+                </svg>
+                Something went wrong!
+              </p>
+              <div class="flex items-center">
+                <button
+                  type="button"
+                  onClick={() => setFailureNotification(false)}
+                  class="btn-close btn-close-white box-content w-4 h-4 ml-2 text-white border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-white hover:opacity-75 hover:no-underline"
+                  data-mdb-dismiss="toast"
+                  aria-label="Close"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="p-3 bg-red-600 rounded-b-lg break-words text-white">
+              Query sent failed.
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };
