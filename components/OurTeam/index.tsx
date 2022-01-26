@@ -37,6 +37,7 @@ export const OurTeam = () => {
               <div className="flex gap-4">
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   href="https://www.linkedin.com/in/gourishankar/"
                 >
                   <svg
@@ -70,6 +71,7 @@ export const OurTeam = () => {
               <div className="flex gap-4">
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   href="https://www.linkedin.com/in/anu-malik-70927222/"
                 >
                   <svg
@@ -105,6 +107,7 @@ export const OurTeam = () => {
               <div className="flex gap-4">
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   href="https://www.linkedin.com/in/nikhil-suri/"
                 >
                   <svg

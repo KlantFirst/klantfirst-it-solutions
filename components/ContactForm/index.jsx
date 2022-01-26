@@ -98,23 +98,23 @@ export const ContactUs = () => {
         </div>
       </div>
       {successNotification && (
-        <div class="flex fixed bottom-0 right-0 flex-col justify-center">
+        <div className="flex fixed bottom-0 right-0 flex-col justify-center">
           <div
-            class="bg-green-600 shadow-lg mx-auto w-96 max-w-full text-sm pointer-events-auto bg-clip-padding rounded-lg block mb-3"
+            className="bg-green-600 shadow-lg mx-auto w-96 max-w-full text-sm pointer-events-auto bg-clip-padding rounded-lg block mb-3"
             id="static-example"
             role="alert"
             aria-live="assertive"
             aria-atomic="true"
             data-mdb-autohide="false"
           >
-            <div class="bg-green-600 flex justify-between items-center py-2 px-3 bg-clip-padding border-b green-blue-500 rounded-t-lg">
-              <p class="font-bold text-white flex items-center">
+            <div className="bg-green-600 flex justify-between items-center py-2 px-3 bg-clip-padding border-b green-blue-500 rounded-t-lg">
+              <p className="font-bold text-white flex items-center">
                 <svg
                   aria-hidden="true"
                   focusable="false"
                   data-prefix="fas"
                   data-icon="info-circle"
-                  class="w-4 h-4 mr-2 fill-current"
+                  className="w-4 h-4 mr-2 fill-current"
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -126,55 +126,55 @@ export const ContactUs = () => {
                 </svg>
                 Thank you!
               </p>
-              <div class="flex items-center">
+              <div className="flex items-center">
                 <button
                   type="button"
                   onClick={() => setSuccessNotification(false)}
-                  class="btn-close btn-close-white box-content w-4 h-4 ml-2 text-white border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-white hover:opacity-75 hover:no-underline"
+                  className="btn-close btn-close-white box-content w-4 h-4 ml-2 text-white border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-white hover:opacity-75 hover:no-underline"
                   data-mdb-dismiss="toast"
                   aria-label="Close"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
+                    className="h-6 w-6"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M6 18L18 6M6 6l12 12"
                     />
                   </svg>
                 </button>
               </div>
             </div>
-            <div class="p-3 bg-green-600 rounded-b-lg break-words text-white">
+            <div className="p-3 bg-green-600 rounded-b-lg break-words text-white">
               Message Successfully sent.
             </div>
           </div>
         </div>
       )}
       {failureNotification && (
-        <div class="flex fixed bottom-0 right-0 flex-col justify-center">
+        <div className="flex fixed bottom-0 right-0 flex-col justify-center">
           <div
-            class="bg-red-600 shadow-lg mx-auto w-96 max-w-full text-sm pointer-events-auto bg-clip-padding rounded-lg block mb-3"
+            className="bg-red-600 shadow-lg mx-auto w-96 max-w-full text-sm pointer-events-auto bg-clip-padding rounded-lg block mb-3"
             id="static-example"
             role="alert"
             aria-live="assertive"
             aria-atomic="true"
             data-mdb-autohide="false"
           >
-            <div class="bg-red-600 flex justify-between items-center py-2 px-3 bg-clip-padding border-b green-blue-500 rounded-t-lg">
-              <p class="font-bold text-white flex items-center">
+            <div className="bg-red-600 flex justify-between items-center py-2 px-3 bg-clip-padding border-b green-blue-500 rounded-t-lg">
+              <p className="font-bold text-white flex items-center">
                 <svg
                   aria-hidden="true"
                   focusable="false"
                   data-prefix="fas"
                   data-icon="info-circle"
-                  class="w-4 h-4 mr-2 fill-current"
+                  className="w-4 h-4 mr-2 fill-current"
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -186,32 +186,32 @@ export const ContactUs = () => {
                 </svg>
                 Something went wrong!
               </p>
-              <div class="flex items-center">
+              <div className="flex items-center">
                 <button
                   type="button"
                   onClick={() => setFailureNotification(false)}
-                  class="btn-close btn-close-white box-content w-4 h-4 ml-2 text-white border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-white hover:opacity-75 hover:no-underline"
+                  className="btn-close btn-close-white box-content w-4 h-4 ml-2 text-white border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-white hover:opacity-75 hover:no-underline"
                   data-mdb-dismiss="toast"
                   aria-label="Close"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
+                    className="h-6 w-6"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M6 18L18 6M6 6l12 12"
                     />
                   </svg>
                 </button>
               </div>
             </div>
-            <div class="p-3 bg-red-600 rounded-b-lg break-words text-white">
+            <div className="p-3 bg-red-600 rounded-b-lg break-words text-white">
               Message sent failed.
             </div>
           </div>
