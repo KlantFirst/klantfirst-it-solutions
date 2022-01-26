@@ -1,6 +1,9 @@
 import React from "react";
 
+import { useRouter } from "next/router";
+
 export const OurTeam = () => {
+  const router = useRouter();
   return (
     <div id="team" className="max-w-screen-xl px-4 mx-auto md:px-8 text-black">
       <div className="mb-6 md:mb-6">
@@ -19,7 +22,7 @@ export const OurTeam = () => {
         <div className="p-4 shadow">
           <div className="h-48 mb-2 overflow-hidden rounded-lg shadow-lg md:h-80">
             <img
-              src="gouri.jpg"
+              src={`${router.basePath}/gouri.jpg`}
               alt="Image"
               className="object-cover object-center w-full h-full"
             />
@@ -55,7 +58,7 @@ export const OurTeam = () => {
         <div className="p-4 shadow">
           <div className="h-48 mb-2 overflow-hidden rounded-lg shadow-lg md:h-80">
             <img
-              src="anu.jpg"
+              src={`${router.basePath}/anu.jpg`}
               alt="Image"
               className="object-cover object-center w-full h-full"
             />
