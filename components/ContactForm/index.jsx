@@ -71,7 +71,7 @@ export const ContactUs = () => {
                 <textarea
                   className="resize-none block appearance-none placeholder-gray-500 placeholder-opacity-100 border border-cyan-700 rounded-md w-full py-3 px-4 text-gray-700 leading-5 focus:outline-none focus:ring-2 focus:ring-light-blue-300 h-56"
                   id="message"
-                  placeholder="Type your query here.."
+                  placeholder="Type your message here.."
                   name="message"
                 />
               </div>
@@ -152,7 +152,7 @@ export const ContactUs = () => {
               </div>
             </div>
             <div class="p-3 bg-green-600 rounded-b-lg break-words text-white">
-              Query Successfully sent.
+              Message Successfully sent.
             </div>
           </div>
         </div>
@@ -212,7 +212,7 @@ export const ContactUs = () => {
               </div>
             </div>
             <div class="p-3 bg-red-600 rounded-b-lg break-words text-white">
-              Query sent failed.
+              Message sent failed.
             </div>
           </div>
         </div>

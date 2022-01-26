@@ -103,7 +103,7 @@ export const Header = () => {
           <ul className="list-reset lg:flex justify-end flex-1 items-center">
             <li className="mr-3">
               <button
-                onClick={() => router.push("/contact")}
+                onClick={() => router.push({ pathname: "/", hash: "services" })}
                 className="navAction hover:bg-gradient-to-r from-cyan-200 to-cyan-500 transition duration-1000 ease-in-out mx-auto lg:mx-0 text-black font-bold rounded-3xl mt-4 lg:mt-0 py-3 px-6 shadow opacity-75 bg-white"
               >
                 Our Services
@@ -111,7 +111,7 @@ export const Header = () => {
             </li>
             <li className="mr-3">
               <button
-                onClick={() => router.push("/contact")}
+                onClick={() => router.push({ pathname: "/", hash: "team" })}
                 className="navAction hover:bg-gradient-to-r from-cyan-200 to-cyan-500 transition duration-1000 ease-in-out mx-auto lg:mx-0 text-black font-bold rounded-3xl mt-4 lg:mt-0 py-3 px-6 shadow opacity-75 bg-white"
               >
                 Our Team

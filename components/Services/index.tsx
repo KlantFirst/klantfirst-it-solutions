@@ -9,7 +9,7 @@ export const Services = () => {
   const router = useRouter();
 
   return (
-    <>
+    <div id="services">
       <div className="w-screen grid gap-32 justify-items-center items-center text-black py-10">
         <h1 className="text-2xl xl:text-5xl font-medium dark:text-white">
           Take a look at our services
@@ -87,6 +87,6 @@ export const Services = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };

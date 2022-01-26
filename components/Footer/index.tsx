@@ -70,7 +70,7 @@ export const Footer = () => {
               </a>
             </div>
             <div className="w-16 h-16 grid bg-black rounded-md justify-items-center items-center transition duration-300 ease-in-out hover:shadow-2xl hover:bg-gray-800 active:shadow-md active:bg-gray-800">
-              <a className="w-10 h-10" href="mailto: agm01@gmail.com">
+              <a className="w-10 h-10" href="mailto: klantfirst@gmail.com">
                 <svg
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"

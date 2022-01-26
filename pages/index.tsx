@@ -4,6 +4,7 @@ import { Meta } from "../components/Core/Meta";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { Intro } from "../components/Intro";
+import { OurTeam } from "../components/OurTeam";
 import { Services } from "../components/Services";
 import { AppConfig } from "../utils/AppConfig";
 
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
       <Header />
       <Intro />
       <Services />
+      <OurTeam />
       <Footer />
     </div>
   );
