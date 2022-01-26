@@ -22,7 +22,7 @@ export const OurTeam = () => {
         <div className="p-4 shadow">
           <div className="h-48 mb-2 overflow-hidden rounded-lg shadow-lg md:h-80">
             <img
-              src={`${router.basePath}/gouri.jpg`}
+              src={`${router.basePath}/gouri_img.jpg`}
               alt="Image"
               className="object-cover object-center w-full h-full"
             />
@@ -58,7 +58,7 @@ export const OurTeam = () => {
         <div className="p-4 shadow">
           <div className="h-48 mb-2 overflow-hidden rounded-lg shadow-lg md:h-80">
             <img
-              src={`${router.basePath}/anu.jpg`}
+              src={`${router.basePath}/anu_img.jpg`}
               alt="Image"
               className="object-cover object-center w-full h-full"
             />
