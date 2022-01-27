@@ -130,7 +130,7 @@ export const ContactUs = () => {
                 <input
                   type="text"
                   className="font-bold text-xl text-gray-700"
-                  readonly
+                  readOnly
                   id="generated-captcha"
                   name="generated-captcha"
                 ></input>
