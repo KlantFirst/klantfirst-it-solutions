@@ -25,7 +25,7 @@ export const Meta = (props: IMetaProps) => {
         <meta name="description" content={props.description} />
         <link
           rel="icon"
-          href={`${router.basePath}/kfit-logo4.PNG`}
+          href={`${router.basePath}/kfit_logo.png`}
           key="favicon"
         />
         <title>KlantFirst</title>
