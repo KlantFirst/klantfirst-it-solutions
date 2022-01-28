@@ -41,7 +41,7 @@ export const Intro = () => {
               Customer satisfaction is our success!
             </h2>
           </div>
-          <div className="2xl:w-96 justify-self-end"></div>
+          <div className="2xl:w-96 fixed justify-self-end right-0 bottom-0"></div>
         </div>
         <div
           id="colorful-parent"

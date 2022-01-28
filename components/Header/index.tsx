@@ -64,19 +64,8 @@ export const Header = () => {
             className="toggleColour no-underline hover:no-underline font-bold text-2xl lg:text-4xl text-white"
             onClick={() => router.push("/")}
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="inline-block h-6 w-6 stroke-wi"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                className="stroke-2"
-                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-              />
-            </svg>
-            <span className="pl-2">KlantFirst</span>
+            <img src="kfit_it_logo.png" className="inline-block h-8 w-16"></img>
+            <span className="pl-2 text-2xl">KlantFirst</span>
           </button>
         </div>
 
