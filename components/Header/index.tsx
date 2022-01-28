@@ -61,7 +61,7 @@ export const Header = () => {
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div className="pl-4 flex items-center">
           <button
-            className="toggleColour no-underline hover:no-underline font-bold text-2xl lg:text-4xl text-white"
+            className="flex content-end toggleColour no-underline hover:no-underline font-bold text-2xl lg:text-4xl text-white"
             onClick={() => router.push("/")}
           >
             <img src="kfit_it_logo.png" className="inline-block h-8 w-16"></img>
