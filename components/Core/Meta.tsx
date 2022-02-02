@@ -16,6 +16,10 @@ export const Meta = (props: IMetaProps) => {
   return (
     <>
       <Head>
+        <meta
+          name="google-site-verification"
+          content="dOXNJMa8WBbwZTrBiyJ-RTFB2hFKKxyUt2EaRQ2SYHI"
+        />
         <meta charSet="UTF-8" key="charset" />
         <meta
           name="viewport"
@@ -25,7 +29,7 @@ export const Meta = (props: IMetaProps) => {
         <meta name="description" content={props.description} />
         <link
           rel="icon"
-          href={`${router.basePath}/kfit_it_logo.png`}
+          href={`${router.basePath}/kfit_it_logo_small.png`}
           key="favicon"
         />
         <title>KlantFirst</title>
