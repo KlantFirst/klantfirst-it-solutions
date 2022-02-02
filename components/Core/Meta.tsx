@@ -18,7 +18,7 @@ export const Meta = (props: IMetaProps) => {
       <Head>
         <meta
           name="google-site-verification"
-          content="dOXNJMa8WBbwZTrBiyJ-RTFB2hFKKxyUt2EaRQ2SYHI"
+          content="toDxQumJ3lO_EcbmkDPtucDF5k1bcuELVOKG-TNHeXc"
         />
         <meta charSet="UTF-8" key="charset" />
         <meta
