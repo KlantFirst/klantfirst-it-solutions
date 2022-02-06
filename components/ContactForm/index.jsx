@@ -73,10 +73,10 @@ export const ContactUs = () => {
   return (
     <>
       <div className="flex justify-center flex-col items-center h-screen mx-auto my-8 bg-gray-100">
-        <p className="text-4xl font-bold text-center text-black my-4">
+        <p className="text-4xl font-bold text-center text-black mt-10 lg:my-4">
           Contact us
         </p>
-        <div className="pt-2">
+        <div className="pt-2 px-2">
           <form ref={form} onSubmit={sendEmail}>
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -126,7 +126,7 @@ export const ContactUs = () => {
                   placeholder="Enter the text shown.."
                 />
               </div>
-              <div className="w-full md:w-1/2">
+              <div className="w-full md:w-1/2 px-4 lg:px-2">
                 <input
                   type="text"
                   className="font-bold text-xl text-gray-700"
@@ -136,7 +136,6 @@ export const ContactUs = () => {
                 ></input>
               </div>
             </div>
-
             <div className="md:flex md:items-center p-3 pt-4">
               <div className="md:w-1/3"></div>
               <div className="md:w-2/3">
