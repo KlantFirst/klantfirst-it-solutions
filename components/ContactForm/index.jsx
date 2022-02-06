@@ -73,7 +73,7 @@ export const ContactUs = () => {
   return (
     <>
       <div className="flex justify-center flex-col items-center h-screen mx-auto my-8 bg-gray-100">
-        <p className="text-4xl font-bold text-center text-black mt-10 lg:my-4">
+        <p className="text-4xl font-bold text-center text-black mt-20 lg:my-4">
           Contact us
         </p>
         <div className="pt-2 px-2">
