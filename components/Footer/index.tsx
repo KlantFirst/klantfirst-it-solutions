@@ -5,8 +5,8 @@ export const Footer = () => {
   const router = useRouter();
 
   return (
-    <div className="relative grid grid-rows-1 text-black pt-44">
-      <div className="grid absolute w-screen bottom-0 grid-flow-col items-end -z-10">
+    <div className="relative grid grid-rows-1 text-black lg:pt-44 pt-10">
+      <div className="grid absolute w-screen bottom-0 lg:grid-flow-col items-end -z-10">
         <div className="2xl:w-4/5">
           <svg
             viewBox="0 0 410 500"
@@ -35,20 +35,22 @@ export const Footer = () => {
       <div className="grid row-span-1 w-full h-full gap-10 2xl:gap-16 border-box p-10 2xl:p-16">
         <div
           id="colorful-parent"
-          className="grid grid-cols-2 items-center w-full h-5v 2xl:px-72 bg-gray-100 bg-opacity-50 backdrop-filter backdrop-blur-md 2xl:backdrop-blur-2xl rounded-xl hover:bg-gradient-to-r from-gray-100 to-cyan-800 transition duration-1000 ease-in-out"
+          className="grid lg:grid-cols-2 items-center w-full h-5v 2xl:px-72 bg-gray-100 bg-opacity-50 backdrop-filter backdrop-blur-md 2xl:backdrop-blur-2xl rounded-xl hover:bg-gradient-to-r from-gray-100 to-cyan-800 transition duration-1000 ease-in-out"
         >
           <div
             id="colorful"
             className="absolute w-full h-full rounded-xl opacity-0"
           />
           <div className="z-10 px-5">
-            <h2 className="text-5xl font-medium mb-8">Still can not decide?</h2>
-            <p className="text-2xl">
+            <h2 className="lg:text-5xl text-3xl font-medium mb-8">
+              Still can not decide?
+            </h2>
+            <p className="lg:text-2xl text-lg">
               Let our sales talk to you and find the right choice for your case
             </p>
           </div>
           <button
-            className="text-lg mr-2 justify-self-end bg-black h-20 w-60 text-white rounded-xl shadow-lg z-10 transition duration-300 ease-in-out hover:shadow-2xl hover:bg-gray-800 active:shadow-md active:bg-gray-800"
+            className="text-lg mr-2 justify-self-end bg-black lg:h-20 h-14 lg:w-60 w-48 text-white rounded-xl shadow-lg z-10 transition duration-300 ease-in-out hover:shadow-2xl hover:bg-gray-800 active:shadow-md active:bg-gray-800"
             type="button"
             onClick={() => router.push("/contact")}
           >
@@ -58,7 +60,7 @@ export const Footer = () => {
         <div className="grid grid-rows-auto items-center justify-items-center w-full h-4v 2xl:px-72 2xl:py-20 bg-gray-100 bg-opacity-50 backdrop-filter backdrop-blur-md 2xl:backdrop-blur-2xl rounded-xl hover:bg-gradient-to-r from-gray-100 to-cyan-800 transition duration-1000 ease-in-out">
           <h1 className="text-2xl font-medium">KlantFirst IT Solutions</h1>
           <div className="grid grid-flow-col gap-4">
-            <div className="w-16 h-16 grid bg-black rounded-md justify-items-center items-center transition duration-300 ease-in-out hover:shadow-2xl hover:bg-gray-800 active:shadow-md active:bg-gray-800">
+            <div className="lg:w-16 w-12 lg:h-16 h-12 grid bg-black rounded-md justify-items-center items-center transition duration-300 ease-in-out hover:shadow-2xl hover:bg-gray-800 active:shadow-md active:bg-gray-800">
               <a className="w-10 h-10" href="">
                 <svg
                   viewBox="0 0 24 24"
@@ -69,7 +71,7 @@ export const Footer = () => {
                 </svg>
               </a>
             </div>
-            <div className="w-16 h-16 grid bg-black rounded-md justify-items-center items-center transition duration-300 ease-in-out hover:shadow-2xl hover:bg-gray-800 active:shadow-md active:bg-gray-800">
+            <div className="lg:w-16 w-12 lg:h-16 h-12 grid bg-black rounded-md justify-items-center items-center transition duration-300 ease-in-out hover:shadow-2xl hover:bg-gray-800 active:shadow-md active:bg-gray-800">
               <a className="w-10 h-10" href="mailto: klantfirst@gmail.com">
                 <svg
                   viewBox="0 0 24 24"

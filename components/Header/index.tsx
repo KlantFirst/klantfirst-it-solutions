@@ -56,6 +56,10 @@ export const Header = () => {
     }
   }, []);
 
+  const toggleMobileMenu = () => {
+    document.getElementById("nav-content")?.classList.toggle("hidden");
+  };
+
   return (
     <nav id="header" className="fixed w-full z-30 top-0 text-white">
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
@@ -72,6 +76,7 @@ export const Header = () => {
         <div className="block lg:hidden pr-4">
           <button
             id="nav-toggle"
+            onClick={() => toggleMobileMenu()}
             className="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-teal-500 appearance-none focus:outline-none"
           >
             <svg
@@ -84,32 +89,51 @@ export const Header = () => {
             </svg>
           </button>
         </div>
-
         <div
           className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 lg:bg-transparent text-black p-4 lg:p-0 z-20 bg-gray-100"
           id="nav-content"
         >
           <ul className="list-reset lg:flex justify-end flex-1 items-center">
+            <li className="mr-3 lg:hidden">
+              <button
+                onClick={() => {
+                  toggleMobileMenu();
+                  router.push("/");
+                }}
+                className="navAction hover:bg-gradient-to-r from-cyan-200 to-cyan-500 transition duration-1000 ease-in-out mx-auto lg:mx-0 text-black font-bold lg:rounded-3xl mt-4 lg:mt-0 py-3 px-6 lg:shadow opacity-75 bg-white"
+              >
+                Home
+              </button>
+            </li>
             <li className="mr-3">
               <button
-                onClick={() => router.push({ pathname: "/", hash: "services" })}
-                className="navAction hover:bg-gradient-to-r from-cyan-200 to-cyan-500 transition duration-1000 ease-in-out mx-auto lg:mx-0 text-black font-bold rounded-3xl mt-4 lg:mt-0 py-3 px-6 shadow opacity-75 bg-white"
+                onClick={() => {
+                  toggleMobileMenu();
+                  router.push({ pathname: "/", hash: "services" });
+                }}
+                className="navAction hover:bg-gradient-to-r from-cyan-200 to-cyan-500 transition duration-1000 ease-in-out mx-auto lg:mx-0 text-black font-bold lg:rounded-3xl mt-4 lg:mt-0 py-3 px-6 lg:shadow opacity-75 bg-white"
               >
                 Our Services
               </button>
             </li>
             <li className="mr-3">
               <button
-                onClick={() => router.push({ pathname: "/", hash: "team" })}
-                className="navAction hover:bg-gradient-to-r from-cyan-200 to-cyan-500 transition duration-1000 ease-in-out mx-auto lg:mx-0 text-black font-bold rounded-3xl mt-4 lg:mt-0 py-3 px-6 shadow opacity-75 bg-white"
+                onClick={() => {
+                  toggleMobileMenu();
+                  router.push({ pathname: "/", hash: "team" });
+                }}
+                className="navAction hover:bg-gradient-to-r from-cyan-200 to-cyan-500 transition duration-1000 ease-in-out mx-auto lg:mx-0 text-black font-bold lg:rounded-3xl mt-4 lg:mt-0 py-3 px-6 lg:shadow opacity-75 bg-white"
               >
                 Our Team
               </button>
             </li>
             <li className="mr-3">
               <button
-                onClick={() => router.push("/contact")}
-                className="navAction hover:bg-gradient-to-r from-cyan-200 to-cyan-500 transition duration-1000 ease-in-out mx-auto lg:mx-0 text-black font-bold rounded-3xl mt-4 lg:mt-0 py-3 px-6 shadow opacity-75 bg-white"
+                onClick={() => {
+                  toggleMobileMenu();
+                  router.push("/contact");
+                }}
+                className="navAction hover:bg-gradient-to-r from-cyan-200 to-cyan-500 transition duration-1000 ease-in-out mx-auto lg:mx-0 text-black font-bold lg:rounded-3xl mt-4 lg:mt-0 py-3 px-6 lg:shadow opacity-75 bg-white"
               >
                 Contact Us
               </button>
