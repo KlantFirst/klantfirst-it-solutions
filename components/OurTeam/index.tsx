@@ -23,7 +23,7 @@ export const OurTeam = () => {
           <div className="h-48 mb-2 overflow-hidden rounded-lg shadow-lg md:h-80">
             <img
               src={`${router.basePath}/gouri_img.jpg`}
-              alt="Image"
+              alt="Gouri"
               className="object-cover object-center w-full h-full"
             />
           </div>
@@ -33,7 +33,7 @@ export const OurTeam = () => {
               Gourishankar Bhutra
             </div>
             <p className="mb-3 text-sm text-gray-500 md:text-base md:mb-4">
-              Founder / CEO
+              Founder / CEO, Full stack developer
             </p>
 
             <div className="flex">
@@ -59,7 +59,7 @@ export const OurTeam = () => {
           <div className="h-48 mb-2 overflow-hidden rounded-lg shadow-lg md:h-80">
             <img
               src={`${router.basePath}/anu_img.jpg`}
-              alt="Image"
+              alt="Anu"
               className="object-cover object-center w-full h-full"
             />
           </div>
@@ -67,7 +67,7 @@ export const OurTeam = () => {
           <div className="flex flex-col items-center justify-center">
             <div className="font-bold text-indigo-500 md:text-lg">Anu</div>
             <p className="mb-3 text-sm text-gray-500 md:text-base md:mb-4">
-              Web Developer
+              Co-Founder, Backend and DevOps Engineer
             </p>
 
             <div className="flex">
@@ -90,29 +90,23 @@ export const OurTeam = () => {
           </div>
         </div>
         <div className="p-4 shadow">
-          <div className="h-48 mb-2 overflow-hidden rounded-lg shadow-lg md:h-80">
+          <div className="h-48 mb-2 overflow-hidden rounded-lg shadow-lg md:h-80 border border-slate-300">
             <img
-              src="nikhil.jpg"
-              alt="Image"
+              src="new_member.png"
+              alt="New member"
               className="object-cover object-center w-full h-full"
             />
           </div>
 
           <div className="flex flex-col items-center justify-center">
-            <div className="font-bold text-indigo-500 md:text-lg">
-              Nikhil Suri
-            </div>
+            <div className="font-bold text-indigo-500 md:text-lg">You?</div>
             <p className="mb-3 text-sm text-gray-500 md:text-base md:mb-4">
-              Web Developer
+              Developer
             </p>
 
             <div className="flex">
               <div className="flex gap-4">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://www.linkedin.com/in/nikhil-suri/"
-                >
+                <a target="_blank" rel="noreferrer">
                   <svg
                     className="w-6 h-6 text-blue-500 fill-current"
                     xmlns="http://www.w3.org/2000/svg"
