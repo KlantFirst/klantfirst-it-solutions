@@ -40,7 +40,7 @@ export const Intro = () => {
               KlantFirst IT Solutions
             </h1>
             <h2 className="lg:text-2xl text-lg font-semibold">
-              Customer satisfaction is our success!
+              Your IT Consultancy Partner for Growth!
             </h2>
           </div>
           <div className="2xl:w-96 fixed justify-self-end right-0 bottom-0"></div>
